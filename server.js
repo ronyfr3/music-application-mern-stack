@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //body-parser tokhoni use korbo jokhn error: toolarge entity error dekhabe tar mene limit drkr porbe jokhn_-->limit:30mb
-app.use(cors({origin:'https://floating-fjord-27056.herokuapp.com'}));
+app.use(cors({origin:'http://localhost:3000'}));
 
 //ROUTES
 app.use("/songs", songRoute);
