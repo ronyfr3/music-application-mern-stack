@@ -15,7 +15,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //body-parser tokhoni use korbo jokhn error: toolarge entity error dekhabe tar mene limit drkr porbe jokhn_-->limit:30mb
-app.use(cors({origin:'http://localhost:3000'}));
+app.use(cors({origin:'
+https://sleepy-poitras-d93301.netlify.app/
+'}));
 
 //ROUTES
 app.use("/songs", songRoute);
